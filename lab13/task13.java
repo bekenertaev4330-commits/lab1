@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Task13 {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("bb","a","ccc");
+        list.stream()
+                .sorted(Comparator.comparing(String::length))
+                .forEach(System.out::println);
+    }
+}
